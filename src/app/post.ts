@@ -1,9 +1,13 @@
 import "reflect-metadata";
 import { createConnection } from "typeorm";
+import Abstract from './abstract';
+import Post from '../entities/post';
 
-class App {
+class App extends Abstract {
   public async start() {
-    console.log('start!');
+    const manager = await this.getManager();
+    const posts = await manager.find(Post, { where: { grabbed: false } });
+    console.log('posts:', posts);
   }
 }
 
