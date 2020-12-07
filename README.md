@@ -1,2 +1,2 @@
 # boilerplate-spider-typeorm
-> Boilerplate for spider based on typeorm.
+> boilerplate-spider-typeorm-description
