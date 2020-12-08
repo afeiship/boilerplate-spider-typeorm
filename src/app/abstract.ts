@@ -4,13 +4,19 @@ import { EntityManager } from 'typeorm/entity-manager/EntityManager';
 import { EntityTarget } from 'typeorm/common/EntityTarget';
 
 export default class {
+  private manager = null;
+
   public async connect(): Promise<EntityManager> {
     return new Promise((resolve, reject) => {
-      createConnection().then(async connection => {
-        const manager = connection.manager;
-        resolve(manager)
-      }).catch(reject);
-    })
+      if (!this.manager) {
+        createConnection().then(async connection => {
+          this.manager = connection.manager;
+          resolve(this.manager);
+        }).catch(reject);
+      } else {
+        resolve(this.manager);
+      }
+    });
   }
 
   public async create(inEntity: EntityTarget<any>, inData: Array<any>) {
