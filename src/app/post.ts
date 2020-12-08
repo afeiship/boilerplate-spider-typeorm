@@ -7,7 +7,7 @@ class App extends Abstract {
   public async start() {
     const manager = await this.connect();
     const posts = await manager.find(Post, { where: { grabbed: false } });
-    console.log('posts:', posts);
+    console.log('posts:', nx, posts);
   }
 }
 
