@@ -1,5 +1,4 @@
 import "reflect-metadata";
-import { createConnection } from "typeorm";
 import Abstract from './abstract';
 import Post from '../entities/post';
 
