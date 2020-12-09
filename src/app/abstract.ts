@@ -2,6 +2,7 @@ import "reflect-metadata";
 import { createConnection } from "typeorm";
 import { EntityManager } from 'typeorm/entity-manager/EntityManager';
 import { EntityTarget } from 'typeorm/common/EntityTarget';
+import './setup';
 
 export default class {
   private manager = null;

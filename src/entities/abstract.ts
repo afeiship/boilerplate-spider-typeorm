@@ -1,5 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, CreateDateColumn, Column } from "typeorm";
-import '@jswork/next';
+import { PrimaryGeneratedColumn, CreateDateColumn, Column } from "typeorm";
 
 export default class {
 
