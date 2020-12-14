@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "@jswork/next": "^1.0.4",
+    "@jswork/next-global": "^1.0.0",
+    "@jswork/next-require": "^1.0.3",
+    "@jswork/next-to-action": "^1.0.0",
+    "@jswork/next-yaml-configuration": "^1.0.1",
     "reflect-metadata": "^0.1.10",
     "sqlite3": "^4.0.3",
     "typeorm": "0.2.29"
