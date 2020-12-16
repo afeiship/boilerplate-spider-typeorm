@@ -7,6 +7,8 @@ nx.require({
 
 nx.global({
   conf: new nx.YamlConfiguration({ path: './config.yml' }),
+  log: nx.DtLog.log,
+  error: nx.DtLog.error,
   toJson: nx.toAction('json'),
   toHtml: nx.toAction('text')
 });
