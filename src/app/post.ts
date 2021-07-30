@@ -1,9 +1,8 @@
 import "reflect-metadata";
-import Abstract from './abstract';
-import Post from '../entities/post';
+import Abstract from '@/app/abstract';
+import Post from '@/entities/post';
 
 const { conf, log } = nx.$global;
-
 
 class App extends Abstract {
   public async start() {
