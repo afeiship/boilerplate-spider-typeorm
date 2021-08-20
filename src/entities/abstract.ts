@@ -1,7 +1,6 @@
-import { PrimaryGeneratedColumn, CreateDateColumn, Column } from "typeorm";
+import { PrimaryGeneratedColumn, CreateDateColumn, Column } from 'typeorm';
 
-export default class {
-
+export class Abstract {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -10,5 +9,4 @@ export default class {
 
   @CreateDateColumn()
   updated_at: Date;
-
 }

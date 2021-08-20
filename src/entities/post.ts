@@ -1,16 +1,11 @@
-import { Entity, Column } from "typeorm";
-import Abstract from './abstract';
+import { Entity, Column } from 'typeorm';
+import { Crawlable } from './crawlable';
 
 @Entity('posts')
-export default class Latest extends Abstract {
-
+export class Post extends Crawlable {
   @Column()
   title: string;
 
   @Column()
   content: string;
-
-  @Column({ default: false })
-  grabbed: boolean;
-
 }
