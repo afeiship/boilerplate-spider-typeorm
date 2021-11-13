@@ -30,10 +30,10 @@
   "scripty": {
     "path": ".scripts"
   },
-  "boilerplate": "@boilerplate-scope/boilerplate-spider-typeorm",
+  "boilerplate": "boilerplate-spider-typeorm",
   "homepage": "https://js.work",
   "repository": {
     "type": "git",
-    "url": "https://github.com/afeiship/@boilerplate-scope/boilerplate-spider-typeorm"
+    "url": "https://github.com/afeiship/boilerplate-spider-typeorm.git"
   }
 }
