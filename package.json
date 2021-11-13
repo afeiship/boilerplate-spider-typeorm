@@ -29,5 +29,11 @@
   },
   "scripty": {
     "path": ".scripts"
+  },
+  "boilerplate": "@boilerplate-scope/boilerplate-spider-typeorm",
+  "homepage": "https://js.work",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afeiship/@boilerplate-scope/boilerplate-spider-typeorm"
   }
 }
